@@ -1,0 +1,147 @@
+.indexRoot {
+  background: #ffffff;
+
+  .pageTop {
+    width: 100%;
+    height: 568px;
+  }
+
+  .cardWrap {
+    width: 100%;
+    height: 334px;
+    background: #262931;
+    padding: 68px 35px 14px 35px;
+  }
+
+  .cardInfo {
+    width: 680px;
+    height: 350px;
+    padding: 20px 22px 0 40px;
+    border-radius: 10px;
+    background: #64dbd9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .cardTop {
+      display: flex;
+      justify-content: space-between;
+    }
+    .cardBottom {
+      font-size: 28px;
+      color: #fff;
+    }
+
+    // logo
+    .logo {
+      display: flex;
+      margin-bottom: 40px;
+      .logoImg {
+        width: 50px;
+        height: 38px;
+        margin-right: 6px;
+      }
+      .logoText {
+        font-size: 30px;
+        color: #ffffff;
+      }
+    }
+
+    // user
+    .userInfo {
+      display: flex;
+      .userPhoto {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        margin-right: 26px;
+        padding: 4px;
+      }
+      .userName {
+        height: 120px;
+        line-height: 120px;
+        font-size: 30px;
+        color: #fff;
+      }
+      .avatarWrap {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .avatar {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .loginBtn {
+      height: 60px;
+      line-height: 58px;
+      color: #fff;
+      border: 1px solid #fff;
+      background: none !important;
+      box-shadow: none;
+      margin-top: 30px;
+    }
+
+    // 二维码
+    .qrImg {
+      width: 128px;
+      height: 128px;
+    }
+  }
+
+  // 积分
+  .credits {
+    height: 96px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    .left,
+    .right {
+      width: 50%;
+      height: 100%;
+      color: #808080;
+      text-align: center;
+    }
+    .left {
+      border-right: 4px solid #808080;
+    }
+  }
+
+  // 中部按钮
+  .pageCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    .btn {
+      width: 528px;
+      height: 82px;
+      line-height: 82px;
+      border-radius: 8px;
+      text-align: center;
+      color: #fff;
+      background-color: #54a53b;
+    }
+  }
+}
+
+.swiper {
+  height: 360px;
+  .item {
+    width: 564px !important;
+    height: 310px !important;
+    padding-left: 20px;
+    .swiperCont {
+      width: 544px;
+      height: 100%;
+      background: #666;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}

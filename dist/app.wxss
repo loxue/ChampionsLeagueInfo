@@ -1,0 +1,4 @@
+
+.b-s-b {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }

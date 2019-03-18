@@ -1,0 +1,16 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "ChampionsLeagueInfo",
+  "description": "taro",
+  "appid": "wxde157d55cf9a02f9",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "postcss": false,
+    "minified": false,
+    "newFeature": true,
+    "autoAudits": false
+  },
+  "compileType": "miniprogram",
+  "condition": {}
+}
