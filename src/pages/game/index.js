@@ -1,11 +1,11 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Form, Map, Canvas } from '@tarojs/components'
 import './index.scss'
 
 export default class Index extends Component {
-
+  onTap() { }
   config = {
-    navigationBarTitleText: '比赛'
+    navigationBarTitleText:'比赛'
   }
 
   componentWillMount () { }
@@ -21,7 +21,13 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>测试比赛!</Text>
+        <Form onSubmit={this.formSubmit} onReset={this.formReset} >
+          <View className='example-body'>
+            <Switch name='switch' className='form-switch'></Switch>
+          </View>
+        </Form>
+        <Map onClick={this.onTap} />
+        <Canvas style='width: 300px; height: 200px;' canvasId='canvas' />
       </View>
     )
   }

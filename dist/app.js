@@ -33,11 +33,11 @@ var _App = function (_BaseComponent) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = _App.__proto__ || Object.getPrototypeOf(_App)).call.apply(_ref, [this].concat(args))), _this), _this.config = {
-      pages: ["pages/news/index", "pages/mine/index", "pages/game/index"],
+      pages: ["pages/news/index", "pages/game/index", "pages/mine/index"],
       window: {
         backgroundTextStyle: "light",
-        navigationBarBackgroundColor: "#000000",
-        navigationBarTextStyle: "white"
+        navigationBarBackgroundColor: "#ffffff",
+        navigationBarTextStyle: "black"
       },
       tabBar: {
         list: [{
@@ -57,7 +57,7 @@ var _App = function (_BaseComponent) {
           selectedIconPath: "pages/images/mine_high.png"
         }],
         color: "#888",
-        selectedColor: "#3eb7b5",
+        selectedColor: "#d40000",
         backgroundColor: "#fff"
       }
     }, _temp), _possibleConstructorReturn(_this, _ret);

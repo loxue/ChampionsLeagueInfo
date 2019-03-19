@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -10,7 +10,7 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _class, _temp2;
 
-var _index = require('../../npm/@tarojs/taro-weapp/index.js');
+var _index = require("../../npm/@tarojs/taro-weapp/index.js");
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -36,33 +36,67 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = [], _this.config = {
-      navigationBarTitleText: '新闻''
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["btn"], _this.config = {
+      navigationBarTitleText: '新闻'
+    }, _this.state = {
+      btn: [{
+        text: '页面主操作 Normal',
+        size: 'default',
+        type: 'primary'
+      }, {
+        text: '页面主操作 Loading',
+        size: 'default',
+        type: 'primary',
+        loading: true
+      }, {
+        text: '页面主操作 Disabled',
+        size: 'default',
+        type: 'primary',
+        disabled: true
+      }, {
+        text: '页面次要操作 Normal',
+        size: 'default',
+        type: 'default'
+      }, {
+        text: '页面次要操作 Disabled',
+        size: 'default',
+        type: 'default',
+        disabled: true
+      }, {
+        text: '警告类操作 Normal',
+        size: 'default',
+        type: 'warn'
+      }, {
+        text: '警告类操作 Disabled',
+        size: 'default',
+        type: 'warn',
+        disabled: true
+      }]
     }, _this.$$refs = [], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Index, [{
-    key: '_constructor',
-    value: function _constructor(props) {
-      _get(Index.prototype.__proto__ || Object.getPrototypeOf(Index.prototype), '_constructor', this).call(this, props);
+    key: "_constructor",
+    value: function _constructor() {
+      _get(Index.prototype.__proto__ || Object.getPrototypeOf(Index.prototype), "_constructor", this).call(this);
     }
   }, {
-    key: 'componentWillMount',
+    key: "componentWillMount",
     value: function componentWillMount() {}
   }, {
-    key: 'componentDidMount',
+    key: "componentDidMount",
     value: function componentDidMount() {}
   }, {
-    key: 'componentWillUnmount',
+    key: "componentWillUnmount",
     value: function componentWillUnmount() {}
   }, {
-    key: 'componentDidShow',
+    key: "componentDidShow",
     value: function componentDidShow() {}
   }, {
-    key: 'componentDidHide',
+    key: "componentDidHide",
     value: function componentDidHide() {}
   }, {
-    key: '_createData',
+    key: "_createData",
     value: function _createData() {
       this.__state = arguments[0] || this.state || {};
       this.__props = arguments[1] || this.props || {};

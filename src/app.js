@@ -7,13 +7,13 @@ class App extends Component {
   config = {
     pages: [
       "pages/news/index",
-      "pages/mine/index",
-      "pages/game/index"
+      "pages/game/index",
+      "pages/mine/index"
     ],
     window: {
       backgroundTextStyle: "light",
-      navigationBarBackgroundColor: "#000000",
-      navigationBarTextStyle: "white"
+      navigationBarBackgroundColor: "#ffffff",
+      navigationBarTextStyle: "black"
     },
     tabBar: {
       list: [
@@ -35,7 +35,7 @@ class App extends Component {
         }
       ],
       color: "#888",
-      selectedColor: "#3eb7b5",
+      selectedColor: "#d40000",
       backgroundColor: "#fff"
     }
   };

@@ -1,4 +1,15 @@
 <block>
-    <view class="index"><text>测试新闻!</text>
+    <view class="example-body"><text>header content input</text>
+        <input type="text" placeholder="武磊获得首胜" focus="{{true}}" />
+        <movable-area style="height: 200px; width: 375px; background: red;">
+            <movable-view style="height: 50px; width: 50px; background: blue;" direction="all"><text>点我啊</text>
+            </movable-view>
+        </movable-area>
+        <view class="container">
+            <button size="{{item.size ? item.size : ''}}" type="{{item.type ? item.type : ''}}" loading="{{item.loading ? item.loading : false}}" disabled="{{item.disabled ? item.disabled : false}}" wx:for="{{btn}}" wx:for-item="item" wx:for-index="_anonIdx">{{item.text}}</button>
+            <button size="mini" type="primary">按钮</button>
+            <button size="mini">按钮</button>
+            <button size="mini" type="warn">按钮</button>
+        </view>
     </view>
 </block>
